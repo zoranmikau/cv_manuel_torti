@@ -3,7 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manuel J. Torti — CV</title>
+
+<!-- ══ OPTIMIZACIÓN SEO & GEO (Nuevas etiquetas estratégicas) ══ -->
+<title>Manuel Torti | Jefe proyecto, consultor, comunicación y análisis datos en turismo</title>
+<meta name="description" content="Experto digital y sector público con experiencia en inteligencia turística en Segittur y PID.">
+<meta name="keywords" content="Jefe de Proyecto Senior, Inteligencia Turistica, Sistema de Inteligencia Turistica, SEGITTUR, Turespaña, Dataestur, Visualizacion de datos, Fondos PRTR, Promoción turística, comunicación, empleo turismo, consultor turistico, Madrid, Canarias, Las Palmas">
+<meta name="author" content="Manuel J Torti">
+
+<!-- Geolocalización Múltiple (Madrid y Canarias) -->
+<meta name="geo.region" content="ES-M, ES-CN" />
+<meta name="geo.placename" content="Madrid, Las Palmas de Gran Canaria, Canarias" />
+<meta name="geo.position" content="40.416775;-3.703790;28.123546;-15.436257" />
+<meta name="ICBM" content="40.416775, -3.703790; 28.123546, -15.436257" />
+
+<!-- Open Graph para compartir en LinkedIn -->
+<meta property="og:title" content="Manuel Torti | Jefe de Proyecto Sénior - Comunicación digital" />
+<meta property="og:description" content="Estratega de contenidos basados en datos y gestión de proyectos tecnológicos de turismo." />
+<meta property="og:url" content="https://tu-usuario.github.io/zoranmikau/cv_manuel_torti" />
+<meta property="og:type" content="profile" />
+<!-- ════════════════════════════════════════════════════════════ -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
@@ -51,7 +70,7 @@ body { font-family:'DM Sans',sans-serif; background:#ded9cf; color:var(--ink); m
 .nav-anchor { font-size:0.71rem; font-weight:500; letter-spacing:0.09em; text-transform:uppercase; color:var(--accent); background:var(--accent-light); border:1px solid #c0cfe8; border-radius:3px; padding:4px 11px; cursor:pointer; transition:all 0.15s; font-family:'DM Sans',sans-serif; white-space:nowrap; }
 .nav-anchor:hover, .nav-anchor.active { background:var(--accent); color:#fff; }
 
-* ── SELECTOR + NAV ── */
+/* ── SELECTOR + NAV ── */
 .seleector-nav-area { padding:1rem 3.5rem 1.1rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.8rem; border-bottom:2px solid var(--ink); }
 .selector-row { display:flex; flex-wrap:wrap; gap:1rem; font-size:1.5rem; color:var(--ink-soft); align-items:center; }
 .selector-row a { color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; transition:border-color 0.2s; }
@@ -135,34 +154,15 @@ section:last-child { margin-bottom:0; }
 .enlace-card-url { font-size:0.75rem; color:var(--accent); margin-top:0.5rem; display:inline-block; text-decoration: none; }
 
 /* ── CONTENTEDITABLE STYLES ── */
-/* In edit mode, all [contenteditable] elements get a subtle highlight on hover/focus */
-.edit-mode-active [contenteditable="true"] {
-  outline: none;
-  border-radius: 3px;
-  transition: background 0.15s, box-shadow 0.15s;
-  cursor: text;
-}
-.edit-mode-active [contenteditable="true"]:hover {
-  background: rgba(200, 168, 75, 0.08);
-  box-shadow: 0 0 0 2px rgba(200,168,75,0.25);
-}
-.edit-mode-active [contenteditable="true"]:focus {
-  background: #fffef5;
-  box-shadow: 0 0 0 2px var(--gold);
-}
-/* Edit mode hint strip on editable elements */
-.edit-mode-active [contenteditable="true"]::after {
-  content: '';
-}
-/* Tags are special: in edit mode show a subtle delete hint */
-.edit-mode-active .tag {
-  cursor: text;
-}
-/* Highlight editable sections with a faint left border */
+.edit-mode-active [contenteditable="true"] { outline: none; border-radius: 3px; transition: background 0.15s, box-shadow 0.15s; cursor: text; }
+.edit-mode-active [contenteditable="true"]:hover { background: rgba(200, 168, 75, 0.08); box-shadow: 0 0 0 2px rgba(200,168,75,0.25); }
+.edit-mode-active [contenteditable="true"]:focus { background: #fffef5; box-shadow: 0 0 0 2px var(--gold); }
+.edit-mode-active [contenteditable="true"]::after { content: ''; }
+.edit-mode-active .tag { cursor: text; }
 .edit-mode-active .skill-card { border-color: #c0cfe8; }
 .edit-mode-active .resumen-item { cursor: pointer; }
 
-/* ── EDIT MODE INDICATOR on section labels ── */
+/* ── EDIT MODE INDICATOR ── */
 .edit-hint { display:none; font-size:0.62rem; color:var(--gold); letter-spacing:0.06em; font-style:normal; font-weight:400; margin-left:4px; opacity:0.8; }
 .edit-mode-active .edit-hint { display:inline; }
 
@@ -522,55 +522,55 @@ section:last-child { margin-bottom:0; }
             <p class="enlace-card-label" id="link1-label">Visualización datos · Mayo'26 </p>
             <p class="enlace-card-title" id="link1-title">Museos de España - Día Internacional</p>
             <p class="enlace-card-desc" id="link1-desc">Presentación de la estadística de museos de España para su análisis interactivo.</p>
-           <a href="https://public.flourish.studio/story/3678885/" class="enlace-card-url" id="link2-url" target="_blank" rel="noopener noreferrer">Datos museos ↗</a>
+            <a href="https://public.flourish.studio/story/3678885/" title="Visualización interactiva de los datos y estadística de visitantes, empleo y museos de España"  class="enlace-card-url" id="link2-url" target="_blank" rel="noopener noreferrer">Datos museos ↗</a>
                    </div>
           <div class="enlace-card">
             <p class="enlace-card-label" id="link2-label">Visualización datos · Febrero'26</p>
             <p class="enlace-card-title" id="link2-title">La Liga: goles y asistencias</p>
             <p class="enlace-card-desc" id="link2-desc">Cuadro de mando de la competición española de fútbol para el seguimiento por equipos y jugadores.</p>
-            <a href="https://public.tableau.com/app/profile/manuel.torti/viz/LaLiga_17695909915150/Dashboard1?publish=yes" class="enlace-card-url" id="link2-url" target="_blank" rel="noopener noreferrer">La Liga y su Mundial ↗</a>
+            <a href="https://public.tableau.com/app/profile/manuel.torti/viz/LaLiga_17695909915150/Dashboard1?publish=yes" title="Viusalización de datos de goles y asistencias de la Liga española de fútbol"class="enlace-card-url" id="link2-url" target="_blank" rel="noopener noreferrer">La Liga y su Mundial ↗</a>
           </div>
           <div class="enlace-card">
             <p class="enlace-card-label" id="link3-label">Visualización datos · Diciembre'25</p>
             <p class="enlace-card-title" id="link3-title">Compra de viviendas por extranjeros en España</p>
             <p class="enlace-card-desc" id="link3-desc">Narrativa visual con interacción en mapa de los datos de compras de vivienda por extranjeros en España.</p>
-            <a href="https://zoranmikau.github.io/compras_vivienda_extranjeros/" class="enlace-card-url" id="link3-url" target="_blank" rel="noopener noreferrer">Vivenda de extranjeros en España ↗</a>
+            <a href="https://zoranmikau.github.io/compras_vivienda_extranjeros/" title="Mapa interactivo de datos de la compra de viviendas por extranjeros en España" class="enlace-card-url" id="link3-url" target="_blank" rel="noopener noreferrer">Vivenda de extranjeros en España ↗</a>
           </div>
           <div class="enlace-card">
             <p class="enlace-card-label" id="link4-label">Difusión cultura del dato · Mar'23/Jul'25</p>
             <p class="enlace-card-title" id="link4-title">Blog conocimiento turístico</p>
             <p class="enlace-card-desc" id="link4-desc">Lanzamiento, gestión y creación de contenidos para el blog de Dataestur.</p>
-            <a href="https://www.dataestur.es/blog/" class="enlace-card-url" id="link4-url" target="_blank" rel="noopener noreferrer">Blog turismo y datos ↗</a>
+            <a href="https://www.dataestur.es/blog/" title="Blog de difusión del conocimiento turístico y análisis de datos de Dataestur" class="enlace-card-url" id="link4-url" target="_blank" rel="noopener noreferrer">Blog turismo y datos ↗</a>
           </div>
             <div class="enlace-card">
             <p class="enlace-card-label" id="link5-label">Reporting · Nov'24/Jul'25</p>
             <p class="enlace-card-title" id="link5-title">Informe escucha activa del turismo</p>
             <p class="enlace-card-desc" id="link5-desc">Publicación mensual del seguimiento del turismo de España en redes sociales, buscadores y medios de comunicación.</p>
-            <a href="https://www.dataestur.es/download/informe-de-escucha-activa-mayo-2025/?wpdmdl=34067&amp;refresh=6821cd5de3f191747045725" class="enlace-card-url" id="link5-url" target="_blank" rel="noopener noreferrer">Informe escucha activa ↗</a>
+            <a href="https://www.dataestur.es/download/informe-de-escucha-activa-mayo-2025/?wpdmdl=34067&amp;refresh=6821cd5de3f191747045725" title="Informes de escucha activa y monitorización del turismo de España en medios, Internet y redes sociales"class="enlace-card-url" id="link5-url" target="_blank" rel="noopener noreferrer">Informe escucha activa ↗</a>
              </div>
             <div class="enlace-card">
             <p class="enlace-card-label" id="link6-label">Reporting · Jul'24/Jul'25</p>
             <p class="enlace-card-title" id="link6-title">Informe de indicadores del turismo</p>
             <p class="enlace-card-desc" id="link6-desc">Publicación mensual del seguimiento del desempeño del sector turístico en España.</p>
-            <a href="https://www.dataestur.es/download/informe-de-indicadores-mayo-2025/?wpdmdl=34042&refresh=6a09a7a093cd11779017632" class="enlace-card-url" id="link6-url" target="_blank" rel="noopener noreferrer">Informe de indicadores ↗</a>
+            <a href="https://www.dataestur.es/download/informe-de-indicadores-mayo-2025/?wpdmdl=34042&refresh=6a09a7a093cd11779017632" title="Informes estratégicos de indicadores y desempeño del turismo en España" class="enlace-card-url" id="link6-url" target="_blank" rel="noopener noreferrer">Informe de indicadores ↗</a>
           </div>
           <div class="enlace-card">
             <p class="enlace-card-label" id="link7-label">Reporting · Abr'23/Jul'25</p>
             <p class="enlace-card-title" id="link7-title">Informe coyuntura turística</p>
             <p class="enlace-card-desc" id="link7-desc">Publicación trimestral de análisis del turismo en España con detalle de visitantes, gasto, economía, empleo y alojamientos.</p>
-            <a href="https://www.dataestur.es/download/informe-de-indicadores-mayo-2025/?wpdmdl=34042&refresh=6a09a7a093cd11779017632" class="enlace-card-url" id="link7-url" target="_blank" rel="noopener noreferrer">Informe de coyuntura ↗</a>
+            <a href="https://www.dataestur.es/download/informe-de-indicadores-mayo-2025/?wpdmdl=34042&refresh=6a09a7a093cd11779017632" title="Informes de coyuntura del turismo en España"  class="enlace-card-url" id="link7-url" target="_blank" rel="noopener noreferrer">Informe de coyuntura ↗</a>
           </div>
              <div class="enlace-card">
             <p class="enlace-card-label" id="link8-label">Gestión proyectos · Jul'23/Jul'25</p>
             <p class="enlace-card-title" id="link8-title">Buscador contratación pública</p>
             <p class="enlace-card-desc" id="link8-desc">Herramienta avanzada de búsqueda de licitaciones y contratos menores en turismo y visualización de datos.</p>
-            <a href="https://www.segittur.es/sala-de-prensa/notas-de-prensa/segittur-recibe-premio-socinfo-digital-en-innovacion-digital-y-uso-inteligente-de-datos-en-contratacion-publica/" class="enlace-card-url" id="link8-url" target="_blank" rel="noopener noreferrer">Premio Socinfo 2025 ↗</a>
+            <a href="https://www.segittur.es/sala-de-prensa/notas-de-prensa/segittur-recibe-premio-socinfo-digital-en-innovacion-digital-y-uso-inteligente-de-datos-en-contratacion-publica/" title="Buscador avanzado de contratación pública en turismo Premio SOCINFO 2025"  class="enlace-card-url" id="link8-url" target="_blank" rel="noopener noreferrer">Premio Socinfo 2025 ↗</a>
           </div>
             <div class="enlace-card">
             <p class="enlace-card-label" id="link9-label">Creación de contenidos · Oct'07/Mar'22</p>
             <p class="enlace-card-title" id="link9-title">Web oficial turismo España</p>
             <p class="enlace-card-desc" id="link9-desc">Generación de más de 500 reportajes para la promoción exterior de España como destino turístico.Participación en la estrategia digital, optimización SEO,usabilidad, analítica web, transcreación y gestión de contenidos para cuatro evoluciones del portal (incluida la actual).</p>
-            <a href="https://www.spain.info" class="enlace-card-url" id="link9-url" target="_blank" rel="noopener noreferrer">Spain.info ↗</a>
+            <a href="https://www.spain.info" title="Creación de contenidos para la Web oficial de turismo de España"  class="enlace-card-url" id="link9-url" target="_blank" rel="noopener noreferrer">Spain.info ↗</a>
           </div>
         <div class="enlace-card">
             <p class="enlace-card-label" id="link10-label">RRSS · Jun'12/Dic'21</p>
@@ -589,7 +589,7 @@ section:last-child { margin-bottom:0; }
             <p class="enlace-card-label" id="link12-label">Visualización datos · 2024</p>
             <p class="enlace-card-title" id="link12-title">Vías Verdes de España</p>
             <p class="enlace-card-desc" id="link12-desc">Visualización interactiva de muestra de datos estadísticos del uso de las Vías Verdes para Dataestur.</p>
-            <a href="https://www.dataestur.es/sostenibilidad/vias-verdes/" class="enlace-card-url" id="link12-url" target="_blank" rel="noopener noreferrer">Vías Verdes ↗</a>
+            <a href="https://www.dataestur.es/sostenibilidad/vias-verdes/" title="Datos interactivos de las Vías Verdes de España"  class="enlace-card-url" id="link12-url" target="_blank" rel="noopener noreferrer">Vías Verdes ↗</a>
             </div>
         <p style="font-size:0.8rem;color:var(--ink-muted);margin-top:1.5rem;font-style:italic;" id="field-enlaces-nota">
       </section>
@@ -735,6 +735,84 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   selectJob('segittur');
 });
+</script>
+<!-- Datos Estructurados Semánticos Unificados para IA y Motores de Búsqueda -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Manuel J. Torti",
+    "jobTitle": "Jefe de Proyecto Sénior, consultor de turismo, análisis de datos y comunicación",
+    "description": "Estratega de contenidos basados en datos y gestión de proyectos tecnológicos de turismo. Experto digital en el sector público con experiencia en inteligencia turística (SEGITTUR, PID, Dataestur).",
+    "url": "https://tu-usuario.github.io/zoranmikau/cv_manuel_torti/",
+    "sameAs": [
+      "https://www.linkedin.com/in/manueltorti-comunicacion/"
+    ],
+    "nationality": {
+      "@type": "Country",
+      "name": "Spain"
+    },
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressRegion": "Comunidad de Madrid",
+        "addressCountry": "ES"
+      },
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Las Palmas de Gran Canaria",
+        "addressRegion": "Canarias",
+        "addressCountry": "ES"
+      }
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "SEGITTUR",
+      "sameAs": "https://www.segittur.es"
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "name": "Licenciatura en Periodismo / Comunicación"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Project Management",
+        "name": "Gestión de Proyectos"
+      }
+    ],
+    "knowsAbout": [
+      "Inteligencia Turística",
+      "Sistema de Inteligencia Turística (SIT)",
+      "Gestión de Proyectos Tecnológicos",
+      "Gestión de Proyectos de comunicación",
+      "Gestión de Proyectos Digitales",
+      "SEGITTUR",
+      "Turespaña",
+      "Dataestur",
+      "Visualización de Datos",
+      "Fondos PRTR (Plan de Recuperación, Transformación y Resiliencia)",
+      "Promoción Turística",
+      "Comunicación Digital",
+      "Análisis de Datos en Turismo",
+      "Estrategia de Contenidos",
+      "Optimización SEO",
+      "Cuadros de Mando",
+      "Inteligencia de negocio",
+      "Consultor de turismo",
+      "Licitación Pública"
+    ],
+    "seeking": {
+      "@type": "Demand",
+      "availability": "https://schema.org/InStock",
+      "description": "Abierto a nuevos proyectos, consultorías técnicas y puestos de dirección en el ámbito de la comunicación digital, la inteligencia turística y transformación digital pública."
+    }
+  }
+}
 </script>
 </body>
 </html>
